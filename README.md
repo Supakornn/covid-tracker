@@ -4,7 +4,7 @@
 
 # Example
 
-![](https://cdn.discordapp.com/attachments/925063485556150292/951146433988427796/unknown.png)
+![](https://cdn.discordapp.com/attachments/925063485556150292/951500866769264750/unknown.png)
 
 ## How to Install
 
