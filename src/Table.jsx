@@ -1,39 +1,35 @@
 import React from "react";
+import numeral from "numeral";
 import styled from "styled-components";
-
 const TableContainer = styled.div`
   margin-top: 20px;
   overflow: scroll;
+  color: #42b883;
+  background-color: white;
   height: 400px;
-  color: #6a5d5d;
-
-  tr {
-    display: flex;
-    justify-content: space-between;
-  }
 
   td {
     padding: 0.5rem;
+    border: none;
   }
 
   tr:nth-of-type(odd) {
-    background-color: #f3f2f8;
+    background-color: #d5eeff;
   }
 `;
-
-const Table = ({ countries }) => {
+function Table({ countries }) {
   return (
     <TableContainer>
-      {countries.map(({ country, cases }) => (
+      {countries.map((country) => (
         <tr>
-          <td>{country}</td>
+          <td>{country.country}</td>
           <td>
-            <strong>{cases}</strong>
+            <strong>{numeral(country.cases).format("0,0")}</strong>
           </td>
         </tr>
       ))}
     </TableContainer>
   );
-};
+}
 
 export default Table;
