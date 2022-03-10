@@ -1,6 +1,6 @@
 # covid-tracker
 
-<h3 align="center">Portfolio Website, This project made with React.js</h3>
+<h3 align="center">Covid Tracker, This project made with React.js</h3>
 
 # Example
 
